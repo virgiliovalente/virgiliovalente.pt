@@ -1,1 +1,248 @@
+/* ===========================
+   VIRGÍLIO VALENTE
+   Lugares para Viver
+=========================== */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#ffffff;
+    color:#333;
+}
+
+/* HERO */
+
+.hero{
+
+    position:relative;
+
+    width:100%;
+
+    height:100vh;
+
+    overflow:hidden;
+
+}
+
+.hero-image{
+
+    position:absolute;
+
+    inset:0;
+
+    background-image:url("../IMAGEM%20ECRAN%20PRINCIPAL.png");
+
+    background-size:cover;
+
+    background-position:center;
+
+    animation:zoom 28s ease-in-out infinite alternate;
+
+}
+
+.overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.20);
+
+}
+
+.hero-content{
+
+    position:absolute;
+
+    left:8%;
+
+    top:58%;
+
+    transform:translateY(-50%);
+
+    max-width:620px;
+
+    color:white;
+
+    z-index:10;
+
+}
+
+h1{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:56px;
+
+    font-weight:300;
+
+    letter-spacing:1px;
+
+    opacity:0;
+
+}
+
+h2{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:28px;
+
+    font-weight:300;
+
+    margin-top:12px;
+
+    opacity:0;
+
+}
+
+#line1{
+
+    margin-top:40px;
+
+    font-size:21px;
+
+    opacity:0;
+
+}
+
+#line2{
+
+    margin-top:10px;
+
+    font-size:21px;
+
+    opacity:0;
+
+}
+
+.scroll{
+
+    margin-top:70px;
+
+    font-size:34px;
+
+    opacity:0;
+
+}
+
+/* SEGUNDA SECÇÃO */
+
+.story{
+
+    padding:120px 10%;
+
+    background:white;
+
+}
+
+.container{
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+.story h2{
+
+    font-size:48px;
+
+    color:#222;
+
+    margin-bottom:15px;
+
+}
+
+.story h3{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:30px;
+
+    font-weight:300;
+
+    color:#888;
+
+    margin-bottom:45px;
+
+}
+
+.story p{
+
+    font-size:21px;
+
+    line-height:1.9;
+
+    color:#555;
+
+}
+
+/* ANIMAÇÕES */
+
+.fade{
+
+    animation:fadeUp 2s forwards;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(18px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes zoom{
+
+    from{
+
+        transform:scale(1);
+
+    }
+
+    to{
+
+        transform:scale(1.08);
+
+    }
+
+}
+
+@keyframes bounce{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(10px);
+
+    }
+
+}
