@@ -1,233 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Virgílio Valente | Lugares para Viver</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-html{
-scroll-behavior:smooth;
-}
-
-body{
-
-font-family:Inter,sans-serif;
-
-background:#ffffff;
-
-color:#333;
-
-}
-
-.hero{
-
-height:100vh;
-
-position:relative;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-overflow:hidden;
-
-}
-
-.hero img{
-
-position:absolute;
-
-width:100%;
-
-height:100%;
-
-object-fit:cover;
-
-animation:zoom 25s linear infinite alternate;
-
-}
-
-.hero::after{
-
-content:"";
-
-position:absolute;
-
-inset:0;
-
-background:rgba(0,0,0,.28);
-
-}
-
-@keyframes zoom{
-
-from{
-
-transform:scale(1);
-
-}
-
-to{
-
-transform:scale(1.08);
-
-}
-
-}
-
-.content{
-
-position:relative;
-
-z-index:2;
-
-text-align:center;
-
-color:white;
-
-padding:40px;
-
-animation:fade 2s ease;
-
-}
-
-@keyframes fade{
-
-from{
-
-opacity:0;
-
-transform:translateY(25px);
-
-}
-
-to{
-
-opacity:1;
-
-transform:translateY(0);
-
-}
-
-}
-
-h1{
-
-font-family:"Cormorant Garamond",serif;
-
-font-size:72px;
-
-font-weight:300;
-
-letter-spacing:2px;
-
-}
-
-h2{
-
-font-family:"Cormorant Garamond",serif;
-
-font-size:34px;
-
-font-weight:300;
-
-margin-top:18px;
-
-}
-
-p{
-
-margin-top:40px;
-
-font-size:22px;
-
-line-height:1.8;
-
-max-width:700px;
-
-}
-
-.scroll{
-
-margin-top:70px;
-
-font-size:42px;
-
-animation:bounce 2s infinite;
-
-}
-
-@keyframes bounce{
-
-0%,100%{transform:translateY(0);}
-
-50%{transform:translateY(10px);}
-
-}
-
-section{
-
-padding:120px 12%;
-
-}
-
-.container{
-
-max-width:1000px;
-
-margin:auto;
-
-}
-
-.section-title{
-
-font-family:"Cormorant Garamond",serif;
-
-font-size:52px;
-
-font-weight:300;
-
-margin-bottom:20px;
-
-}
-
-.section-sub{
-
-font-family:"Cormorant Garamond",serif;
-
-font-size:32px;
-
-color:#777;
-
-margin-bottom:50px;
-
-}
-
-.text{
-
-font-size:21px;
-
-line-height:1.9;
-
-}
-
-</style>
+<link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -235,19 +23,33 @@ line-height:1.9;
 
 <header class="hero">
 
-<img src="IMAGEM%20ECRAN%20PRINCIPAL.png" alt="Virgílio Valente">
+<div class="hero-image"></div>
 
-<div class="content hero-text">
+<div class="overlay"></div>
 
-<h1>Virgílio Valente</h1>
+<div class="hero-content">
 
-<h2>Lugares para Viver</h2>
+<h1 id="name">
 
-<p>
+Virgílio Valente
 
-Porque uma casa não se escolhe apenas pelas paredes.<br>
+</h1>
 
-Escolhe-se pela vida que permite viver.
+<h2 id="subtitle">
+
+Lugares para Viver
+
+</h2>
+
+<p id="line1">
+
+Uma casa escolhe-se...
+
+</p>
+
+<p id="line2">
+
+...pela vida que permite viver.
 
 </p>
 
@@ -261,37 +63,36 @@ Escolhe-se pela vida que permite viver.
 
 </header>
 
-<section>
+<section class="story">
 
 <div class="container">
 
-<div class="section-title">
+<h2>
 
 Cada casa guarda uma história.
 
-</div>
+</h2>
 
-<div class="section-sub">
+<h3>
 
 O privilégio é encontrar quem a continuará.
 
-</div>
+</h3>
 
-<div class="text">
+<p>
 
-Antes de visitar uma casa, gosto de compreender a história de quem a viveu.
+Mais do que apresentar imóveis, procuro compreender a história de cada lugar e encontrar quem lhe dará continuidade.
 
-Cada lugar transporta memórias, escolhas e momentos únicos.
+Porque as casas não são apenas espaços. São memórias, pessoas e vidas que continuam.
 
-Acredito que o verdadeiro valor de uma casa está na vida que ali aconteceu e na vida que ainda está por acontecer.
-
-Encontrar a pessoa certa para continuar essa história é, para mim, a essência da consultoria imobiliária.
-
-</div>
+</p>
 
 </div>
 
 </section>
 
+<script src="js/main.js"></script>
+
 </body>
+
 </html>
