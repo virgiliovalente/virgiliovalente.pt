@@ -164,25 +164,36 @@ h2{
 
 .story h3{
 
-    font-family:"Cormorant Garamond",serif;
+     font-family:"Cormorant Garamond",serif;
 
-    font-size:30px;
+    font-size:34px;
 
     font-weight:300;
 
-    color:#888;
+    color:#555;
 
-    margin-bottom:45px;
+    margin-top:20px;
+
 
 }
 
 .story p{
 
-    font-size:21px;
+    .story p{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:24px;
+
+    font-style:italic;
 
     line-height:1.9;
 
-    color:#555;
+    color:#8a8a8a;
+
+    margin:35px 0 55px 0;
+
+}
 
 }
 
